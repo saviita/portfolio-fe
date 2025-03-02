@@ -1,0 +1,9 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    padding-inline: 16px;
+
+    &__nav {
+        display: none;
+    }
+}
