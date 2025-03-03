@@ -1,0 +1,44 @@
+@use '../mixins/hover.scss' as *;
+
+.projects {
+    margin-bottom: 64px;
+
+    &__line {
+        display: none;
+        position: absolute;
+        top: 18px;
+    }
+
+    &__title {
+        font-weight: 200;
+        text-align: center;
+    }
+
+    &__name {
+        position: relative;
+        font-size: 30px;
+        color: var(--gray);
+        margin: 0;
+
+        @include hover {
+            color: var(--white);
+
+            &::after {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__name::after {
+        content: '';
+        position: absolute;
+        opacity: 0;
+        background-color: var(--white);
+        width: 100%;
+        height: 1px;
+        left: 0;
+        top: 18px;
+    }
+
+
+}

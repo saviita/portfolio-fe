@@ -1,8 +1,12 @@
 @use 'base/normalize.scss';
 @use 'base/initial-reset.scss';
 @use 'config/variables.scss';
+@use 'mixins/hover.scss';
 @use 'blocks/body.scss';
 @use 'blocks/header.scss';
 @use 'blocks/main.scss';
 @use 'blocks/hero.scss';
 @use 'blocks/intro.scss';
+@use 'blocks/projects.scss';
+@use 'blocks/contact.scss';
+@use 'blocks/footer.scss';

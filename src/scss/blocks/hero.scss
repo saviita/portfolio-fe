@@ -1,6 +1,29 @@
 .hero {
     font-size: 84px;
+    font-weight: 200;
     display: flex;
     flex-direction: column;
     margin-bottom: 64px;
+
+    &__bot {
+        align-self: self-end;
+    }
+
+    &__title {
+        position: relative;
+        font-size: 30px;
+        font-weight: 200;
+        padding-left: 18px;
+        margin: 0;
+    }
+
+    &__title::after {
+        content: '';
+        position: absolute;
+        background-color: var(--white);
+        width: 200px;
+        height: 1px;
+        top: 18px;
+        left: 0;
+    }
 }

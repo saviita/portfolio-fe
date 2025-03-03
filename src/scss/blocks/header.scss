@@ -1,7 +1,12 @@
 .header {
     display: flex;
     flex-direction: row;
-    padding-inline: 16px;
+    justify-content: end;
+    padding: 53px 16px 16px 46px;
+
+    &__icon {
+        width: 20px;
+    }
 
     &__nav {
         display: none;
